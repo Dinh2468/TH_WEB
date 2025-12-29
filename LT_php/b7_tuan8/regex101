@@ -1,0 +1,23 @@
+cac ky hieu regex
+^ tim chuoi ki tu bat dau (^def) chuoi kytu dau tien co phai la chuoi kytu can tim ko
+\ dung de tim ki tu dac biet
+$ tim chuoi ket thuc (def$)
+. dai dien cho ki tu bat ky (a. tim ad, ax, af) 1 cham dai dien cho 1 ky tu sau
++ lap ky tu hoac cum ky tu dung truoc no <=0 (xuat hien it nhat 1 lan)  abc+ tim chuoi abc
+* lap ky tu hoac cum ky tu dung truoc no >=0 (abc* tim chuoi abc hoac ab, abccc (* ko quan tam co hoac ko co kytu dung truoc sao ))
+? ton tai hay ko ton tai cum kytu (ab? tim chuoi co kytu a b co hay ko cung dc)
+\d bieu dien so 0-9 (tim so)
+\D bieu dien 1 kytu ko phai so
+\w bieu dien 1 kytu chu cai hoac so hoac dau gach duoi (a-z,A-Z,0-9,_)
+\W bieu dien 1 kytu ko phai chu cai so hoac dau gach duoi
+\s bieu dien 1 khoang trang (space, tab, newline)
+\S bieu dien 1 kytu ko phai khoang trang
+() gom nhom cac kytu hoac cum kytu lai voi nhau
+{} xac dinh so lan lap (a{3} tim chuoi co 3 ki tu a lien tiep, ab{2,4} tim chuoi co kytu a theo sau boi tu 2 den 4 kytu b)
+| phep toan hoac (abc|def tim chuoi co the la abc hoac def)
+[] gom nhom cac kytu (a[bcd]e tim chuoi abe, ace, ade (cac kytu trong [] la tim 1 trong so do) )
+[^] ngoai le (a[^bcd]e tim chuoi a keo theo 1 kytu bat ky khac b,c,d roi den e)
+
+
+tim so dien thoai co dinh dang (0xx)xxxxxxxxx
+\(0[1-9]{1,2}\)\d{8,9}

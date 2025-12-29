@@ -1,0 +1,19 @@
+<form action="vd2.php" method="post">
+    Ho ten: <input type="text" name="hoten" /><br>
+    Mat khau: <input type="password" name="matkhau" /><br>
+    <input type="hidden" name="sesid" value="999"> field an, khong hien thi <br>
+    Gioi Tinh:
+    <select name="gioitinh" id="">
+        <option value="0">Nam</option>
+        <option value="1">Nữ</option>
+        <option value="2">Khác</option>
+    </select>
+    <br> So thich:
+    <select name="sothich[]" multiple>
+        <option value="0">Gaming</option>
+        <option value="1">Xem phim</option>
+        <option value="2">Du lich</option>
+        <option value="3">Doc sach</option>
+    </select>
+    <br><input type="submit" value="Gui du lieu" />
+</form>
